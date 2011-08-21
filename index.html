@@ -4,17 +4,27 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>New Web Project</title>
+        
+        <script src="3DWeb.js"></script>
     </head>
-    <body>
+    <body style="width: 100%; height:100%;" onload="javascript:(function(){
+    		document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src='http://flax.ie/test/sprite3d/js/Sprite3D.js';
+    		document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src='http://flax.ie/test/3DWeb.js';
+    		
+    		setTimeout(ThreeDWeb, 100);
+    	})();">
         <h1>New Web Project Page</h1>
-        <div style="width: 100%; height:100%; background-color: #400">
-        	<div style="background-color: #800">
-        		<div style="background-color: #C00">
-        			<div style="background-color: #F00">
-        				
+        <div style="width: 100%; height:500px; background-color: #400">
+        	<div style="width: 80%; height:80%; background-color: #800">
+        		<div style="width: 80%; height:80%; background-color: #C00">
+        			<div style="width: 80%; height:80%; background-color: #F00">
+        				<p>Text goes here!</p>
         			</div>
         		</div>
         	</div>
+        </div>
+        <div style="width:400px; height:400px; background-color:#00f">
+        	<div style="width: 80%; height:80%; background-color: #F00"></div>
         </div>
     </body>
 </html>
